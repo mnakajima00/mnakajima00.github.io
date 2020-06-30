@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <!-- FONT -->
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+        <!-- JAVASCRIPT -->
+        <!-- JQUERY -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+
+        <!-- ANIMATIONS -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+
+        <script>
+            $(function() {
+                AOS.init({
+                    disable: 'mobile',
+                    once: false,
+                    duration: 1000,
+                    offset: 300
+                });
+
+                var intro = new Typed('#intro', {
+                    strings: ['Hi,^400 I\'m Maiku'],
+                    typeSpeed: 50,
+                    showCursor: false,
+                    onComplete: (self) => {
+                        var subIntro = new Typed('#subIntro',{
+                            strings: ['I\'m a Student', 'I\'m a Web Developer', 'I\'m a Web Designer', 'I\'m a Software Developer.'],
+                            startDelay: 1000,
+                            typeSpeed: 50,
+                            backSpeed: 50,
+                            backDelay: 1000
+                        });
+                    }
+                });
+
+            });
+            
+        </script>
+
+        <title>Maiku Nakajima</title>
+    </head>
+
+    <body style="font-family: 'Open Sans', sans-serif">
+
+        <!-- HEADER / NAVBAR -->
+        <header class="fixed table p-3 w-full z-10" style="background-color: #1c1c1c">
+            <a class="float-left ml-3 md:ml-10" href="index.html"><img class="w-12 sm:hvr-grow md:w-16" src="assets/avatar-logo.svg"></a>
+            <nav class="align-middle table-cell">
+                <ul class="text-white float-right">
+                    <li class="inline-block mr-4 sm:hvr-grow"><a href="#"><img class="w-6 sm:w-8" src="assets/icons/github.svg"></a></li>
+                    <li class="inline-block mr-4 sm:hvr-grow"><a href="#"><img class="w-6 md:w-8" src="assets/icons/linkedin.svg"</a></li>
+                    <li class="inline-block mr-3 md:mr-10 sm:hvr-grow"><a href="#"><img class="w-6 md:w-8" src="assets/icons/cv.svg"></a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- INTRO -->
+        <div class="relative bg-cover bg-bottom bg-no-repeat w-full h-screen bg-mobile sm:bg-none sm:bg-main">
+            <div class="absolute w-full text-center text-5xl md:text-6xl" style="font-weight: 800; color: #1DF2A4; top:18%;">
+                <span id="intro"></span>
+                <div class="text-xl mt-4 md:text-3xl" style="font-weight: 300; color: #1DF2A4;">
+                    <span id="subIntro"></span>
+                </div>
+            </div>
+
+            <!-- ARROW ICON -->
+            <div class="absolute w-full bottom-0 mb-5">
+                <img class="w-8 m-auto" src="assets/arrow-down.svg">
+            </div>
+        </div>
+
+        <!-- ABOUT ME -->
+        <div class="bg-cover w-full pt-32 pb-16 md:pb-0 sm:pt-32 xl:pt-48" style="background-image: url('assets/aboutme-bg.svg');">
+
+            <div class="grid grid-cols-1 md:grid-cols-12">
+                <div class="md:col-span-1"></div>
+                <!-- AVATAR IMAGE -->
+                <div class="md:col-span-4">
+                    <img data-aos="zoom-in" data-aos-duration="600" class="object-cover w-64 m-auto md:w-full" src="assets/aboutme-img.svg">
+                </div>
+
+                <!-- ABOUT ME CONTENTS -->
+                <div class="text-center md:col-span-7">
+                    <div data-aos="zoom-in-down" class="text-3xl sm:text-3xl md:text-4xl xl:text-5xl font-extrabold" style="color: #1c1c1c">About Me</div>
+                    <div class="text-lg font-light p-3 lg:text-2xl"><span data-aos="zoom-in-right">Currently studying Computer Science at York University.<br><br>Designing and building unique websites, as well as developing applications is my passion; that being said, I love keeping up with the latest trends in design and tech.<br><br>Outside of tech, I love immersing myself in different cultures by travelling and finding new music to listen to.</span></div>
+                </div>
+                <div class="md:col-span-1"></div>
+            </div>
+        </div>
+
+        <!-- SKILLS -->
+        <div class="bg-cover bg-white sm:bg-skills sm:pt-32 md:pt-32 md:pb-16 lg:pt-48 lg:pb-16">
+           <div class="mt-16 justify-center grid grid-cols-1 sm:mt-0 sm:grid-cols-none sm:flex md:mt-24 lg:mt-0" style="font-weight:300">
+                <div data-aos="fade-down" class="w-4/5 m-auto overflow-hidden bg-white m-5 shadow-lg sm:w-64 sm:m-5">
+                    <div class="w-3/5 m-auto p-5">
+                        <img class="object-cover" src="assets/frontend.svg">
+                    </div>
+                    <div class="p-5">
+                        <div class="text-xl font-semibold mb-2 text-center sm:text-base">FRONT END</div>
+                        <div class="text-center text-base mb-10 sm:text-sm md:text-base">HTML5<br>CSS3 | SASS<br>Javascript<br>React | Redux<br>Illustrator | Photoshop</div>
+                    </div>
+                </div>
+
+                <div data-aos="fade-down" data-aos-delay="200" class="w-4/5 m-auto overflow-hidden shadow-lg bg-white m-5 mt-5 sm:w-64 sm:m-5">
+                    <div class="w-3/5 m-auto p-5">
+                        <img class="object-cover" src="assets/database.svg">
+                    </div>
+                    <div class="p-5">
+                        <div class="text-xl font-semibold mb-2 text-center sm:text-base">SERVER | DATABASE</div>
+                        <div class="text-center text-base mb-10 sm:text-sm md:text-base">NodeJS<br>Python<br>PostgreSQL</div>
+                    </div>
+                </div>
+
+                <div data-aos="fade-down" data-aos-delay="300" class="w-4/5 m-auto overflow-hidden shadow-lg bg-white m-5 mt-5 sm:w-64 sm:m-5">
+                    <div class="w-3/5 m-auto p-5">
+                        <img class="object-cover" src="assets/programming.svg">
+                    </div>
+                    <div class="p-5">
+                        <div class="text-xl font-semibold mb-2 text-center sm:text-base">OTHER</div>
+                        <div class="text-center text-base mb-10 sm:text-sm md:text-base">Java<br>C++<br>RISC-V</div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- PROJECTS -->
+        <div class="bg-cover bg-black pt-32 pb-8 md:pt-32 md:pb-32" style="background-image: url('assets/projects-bg.svg')">
+
+            <div class="text-3xl text-center md:text-4xl lg:text-5xl overflow-hidden" style="font-weight: 800; color: #1c1c1c">
+                <div data-aos="zoom-in">- PROJECT PORTFOLIO -</div>
+            </div>
+
+            <div class="justify-center mt-8 md:flex w-full">
+
+                <!-- INVOICE GENERATOR -->
+                <div class="md:hvr-grow-card pb-5 md:flex-grow md:max-w-sm rounded overflow-hidden shadow-lg bg-white m-5">
+                    <img class="w-full" src="assets/desktop-app.svg" alt="Invoice Generator">
+                    <div class="px-6 py-4">
+                        <div class="font-bold text-xl mb-2">Invoice Generator</div>
+                        <p class="text-gray-700 text-base">
+                            An Invoice Generator I made for a clinic. It is programmed in Java and it is able to produce a PDF file after the user has filled in the necessary information.
+                        </p>
+                    </div>
+                    <div class="w-6 ml-6">
+                        <a href="#"><img src="assets/icons/github-black.svg"</a>
+                    </div>
+                </div>
+
+                <!-- COVID19 WEBSCRAPER-->
+                <div class="md:hvr-grow-card pb-5 md:flex-grow md:max-w-sm rounded overflow-hidden shadow-lg bg-white m-5">
+                    <img class="w-full" src="assets/covid-tracker.svg" alt="Invoice Generator">
+                    <div class="px-6 py-4">
+                        <div class="font-bold text-xl mb-2">COVID19 WebScraper</div>
+                        <p class="text-gray-700 text-base">
+                          A webscraper that takes specific data off of a website regarding the COVID19 cases in Malaysia, and saves them in a CSV file.<br><br>
+                        </p>
+                    </div>
+                    <div class="w-6 ml-6">
+                        <a href="#"><img src="assets/icons/github-black.svg"</a>
+                    </div>
+                </div>
+
+                <!-- MORE COMING SOON -->
+                <div class="md:hvr-grow-card pb-5 md:flex-grow md:max-w-sm rounded overflow-hidden shadow-lg bg-white m-5">
+                    <img class="w-full" src="assets/construction.svg" alt="More Coming Soon...">
+                    <div class="px-6 py-4">
+                        <div class="font-bold text-xl mb-2">More coming soon...</div>
+                        <p class="text-gray-700 text-base">
+                            More Projects to come! Check back later to see what else I've made, or check out my github to see other notable projects.<br><br>
+                        </p>
+                    </div>
+                    <div class="w-6 ml-6">
+                        <img src="assets/icons/github-black.svg">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- THANKS -->
+        <div class="text-center pt-16 pb-20 lg:pt-20 lg:pb-24 bg-white">
+            <div data-aos="zoom-in" data-aos-duration="1000" class="text-3xl md:text-4xl lg:text-5xl font-extrabold">Thanks for visiting!</div>
+            <div class="mt-4">
+                <img data-aos="zoom-in" class="w-2/5 m-auto" src="assets/astronaut.svg">
+            </div>
+            <div class="text-base font-light mt-5 lg:text-xl">If there's a project you'd like to get started or you just want to say hi,<br>feel free to get in touch.</div>
+            <div class="m-auto rounded mt-8 w-32 p-2 font-light cursor-pointer text-sm md:hvr-grow-icon" style="background-color: #1DF2A4"><a href="mailto:maikunakajima.work@gmail.com">CONTACT ME</a></div>
+        </div>
+
+
+        <!-- FOOTER -->
+        <footer class="bg-cover text-center pb-2" style="background-color: #1c1c1c; color: white">
+            <!-- CONTACTS -->
+            <ul class="mb-0 font-light text-xs sm:text-md md:text-base">
+                <li class="inline-block m-4 md:m-8"><a href="">Github</a></li>
+                <li class="inline-block m-4 md:m-8"><a href="">Linkedin</a></li>
+                <li class="inline-block m-4 md:m-8"><a href="">Resume</a></li>
+            </ul>
+
+            <div class="text-xs font-light">&copy 2020 Maiku Nakajima. All right reserved.</div>
+        </footer>
+
+    </body>
+</html>
