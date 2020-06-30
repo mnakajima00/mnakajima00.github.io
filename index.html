@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="scroll-behavior: smooth">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -53,12 +53,12 @@
 
         <!-- HEADER / NAVBAR -->
         <header class="fixed table p-3 w-full z-10" style="background-color: #1c1c1c">
-            <a class="float-left ml-3 md:ml-10" href="index.html"><img class="w-12 sm:hvr-grow md:w-16" src="assets/avatar-logo.svg"></a>
+            <a class="float-left ml-3 md:ml-10" href="index.html"><img class="w-12 sm:hvr-grow-icon md:w-16" src="assets/avatar-logo.svg"></a>
             <nav class="align-middle table-cell">
                 <ul class="text-white float-right">
-                    <li class="inline-block mr-4 sm:hvr-grow"><a href="#"><img class="w-6 sm:w-8" src="assets/icons/github.svg"></a></li>
-                    <li class="inline-block mr-4 sm:hvr-grow"><a href="#"><img class="w-6 md:w-8" src="assets/icons/linkedin.svg"</a></li>
-                    <li class="inline-block mr-3 md:mr-10 sm:hvr-grow"><a href="#"><img class="w-6 md:w-8" src="assets/icons/cv.svg"></a></li>
+                    <li class="inline-block mr-4 sm:hvr-grow-icon"><a href="https://github.com/mnakajima00"><img class="w-6 sm:w-8" src="assets/icons/github.svg"></a></li>
+                    <li class="inline-block mr-4 sm:hvr-grow-icon"><a href="https://linkedin.com/in/mnakajima"><img class="w-6 md:w-8" src="assets/icons/linkedin.svg"</a></li>
+                    <li class="inline-block mr-3 md:mr-10 sm:hvr-grow-icon"><a target="_blank" href="assets/pdf/Resume.pdf"><img class="w-6 md:w-8" src="assets/icons/cv.svg"></a></li>
                 </ul>
             </nav>
         </header>
@@ -73,13 +73,13 @@
             </div>
 
             <!-- ARROW ICON -->
-            <div class="absolute w-full bottom-0 mb-5">
-                <img class="w-8 m-auto" src="assets/arrow-down.svg">
+            <div class="absolute text-center w-full bottom-0 mb-5">
+                <a href="#aboutme"><img class="w-8 m-auto sm:hvr-grow-icon sm:cursor-pointer" src="assets/arrow-down.svg"></a>
             </div>
         </div>
 
         <!-- ABOUT ME -->
-        <div class="bg-cover w-full pt-32 pb-16 md:pb-0 sm:pt-32 xl:pt-48" style="background-image: url('assets/aboutme-bg.svg');">
+        <div id="aboutme" class="bg-cover w-full pt-32 pb-16 md:pb-0 sm:pt-32 xl:pt-48" style="background-image: url('assets/aboutme-bg.svg');">
 
             <div class="grid grid-cols-1 md:grid-cols-12">
                 <div class="md:col-span-1"></div>
@@ -203,9 +203,9 @@
         <footer class="bg-cover text-center pb-2" style="background-color: #1c1c1c; color: white">
             <!-- CONTACTS -->
             <ul class="mb-0 font-light text-xs sm:text-md md:text-base">
-                <li class="inline-block m-4 md:m-8"><a href="">Github</a></li>
-                <li class="inline-block m-4 md:m-8"><a href="">Linkedin</a></li>
-                <li class="inline-block m-4 md:m-8"><a href="">Resume</a></li>
+                <li class="inline-block m-4 md:m-8"><a href="https://github.com/mnakajima00">Github</a></li>
+                <li class="inline-block m-4 md:m-8"><a href="https://linkedin.com/in/mnakajima">Linkedin</a></li>
+                <li class="inline-block m-4 md:m-8"><a href="assets/pdf/Resume.pdf">Resume</a></li>
             </ul>
 
             <div class="text-xs font-light">&copy 2020 Maiku Nakajima. All right reserved.</div>
