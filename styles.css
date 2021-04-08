@@ -17930,6 +17930,10 @@ video {
   transform: scale(1.1);
 }
 
+.bg-custom {
+  background-color: #1df2a4;
+}
+
 .bg-mobile {
   background-image: url('assets/bg-mobile.svg');
 }
